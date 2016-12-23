@@ -1,4 +1,5 @@
 //logs.js
+var app=getApp();
 var util = require('../../utils/util.js')
 Page({
   data: {
@@ -16,8 +17,10 @@ Page({
     console.log("logs page execute: onReady.");
   },
   onShow: function() {
-    // Do something when page show.
+   
     console.log("logs page execute: onShow.");
+    console.log(app.globalData.userInfo);
+    
   },
   onHide: function() {
     // Do something when page hide.

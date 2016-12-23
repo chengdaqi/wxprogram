@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
-var app = getApp()
+var app = getApp();
+var A= require("../../utils/aa.js");
 Page({
   data: {
     motto: 'Hello World',
@@ -22,5 +23,10 @@ Page({
         userInfo:userInfo
       })
     })
+  },
+  onShow:function(){
+    //app.globaldata.userInfo("Small Program");
+    console.log( app.globalData.userInfo="Small Program");
+    A.aa("this is a module think.");
   }
 })
